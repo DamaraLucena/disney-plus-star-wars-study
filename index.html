@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="image/png" sizes="32x32" rel="icon" href="./assets/icons/icons8-mando-120.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="style.css">
 
@@ -12,7 +19,7 @@
 <body>
 
     <header>
-        <nav>
+        <nav class="navbar">
             <div class="logo">
                 <img src="./assets/images/logo.svg" alt="Logo do streaming da disney">
             </div>
@@ -33,11 +40,12 @@
                 <li>
                     <a href="#"> <img src="./assets/icons/series.svg" alt=""> Séries</a>
                 </li>
-                <li>
-                    <a href="#"> <img src="./assets/icons/pesquisa.svg" alt=""> Pesquisa</a>
-                </li>
             </ul>
         </nav>
+
+        <form id="search-form">
+            <input src="./assets/icons/pesquisa.svg" type="text" id="search-input" placeholder="Pesquisar">
+        </form>
 
         <div class="avatar">
             <span><strong> Santos </strong></span>
@@ -45,6 +53,8 @@
 
         </div>
     </header>
+
+    <video loop autoplay playsinline muted src="./assets/video/mandalorian.mp4"></video>
     
 </body>
 </html>

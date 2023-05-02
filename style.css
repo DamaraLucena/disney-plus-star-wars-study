@@ -6,4 +6,108 @@
 
 :root{
     font-size: 65.2%;
+
+    --bg-color: #000000;
 }
+
+body{
+    width: 100%;
+    height: 100vh;
+
+    font-family: "Montserrat", sans-serif;
+
+    background-color: var(--bg-color);
+    color: #ffffff;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 40px;
+  font-size: 1.6rem;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+header nav ul a {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+  }
+  
+ul {
+    list-style: none;
+}
+  
+.logo img {
+    width: 80px;
+    height: 50px;
+}
+  
+.avatar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Pesquisa */
+
+#search-input {
+    padding: 5px;
+    border: 1px solid #ffffff;
+    border-radius: 5rem;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1.3rem;
+    text-align: center;
+
+    width: 30rem;
+
+    margin-top: 1.5rem;
+
+    background-image: url("./assets/icons/pesquisa.svg");
+    background-repeat: no-repeat;
+    background-position: 5px;
+    background-size: 20px;
+
+}
+
+#search-input::placeholder {
+    color: #ffffff;
+}
+
+#search-input:focus {
+    outline: none;
+}
+
+/* Main */
+
+video {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 50%;
+}
+  
