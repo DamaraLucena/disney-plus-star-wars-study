@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <link type="image/png" sizes="32x32" rel="icon" href="./assets/icons/icons8-mando-120.png">
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@400;500&display=swap" rel="stylesheet">
+    
 
     <link rel="stylesheet" href="style.css">
 
@@ -18,7 +20,14 @@
 </head>
 <body>
 
-    <header>
+    <audio id="entrada-audio" autoplay>
+        <source src="./assets/audio/Lightsaber.mp3" type="audio/mpeg">
+        <source src="./assets/audio/Lightsaber.ogg" type="audio/ogg">
+
+        Seu navegador não suporta o elemento <code>audio</code>.
+    </audio>
+
+    <header class="position">
         <nav class="navbar">
             <div class="logo">
                 <img src="./assets/images/logo.svg" alt="Logo do streaming da disney">
@@ -48,13 +57,122 @@
         </form>
 
         <div class="avatar">
-            <span><strong> Santos </strong></span>
             <img src="./assets/images/avatar.png" alt="">
 
         </div>
     </header>
 
     <video loop autoplay playsinline muted src="./assets/video/mandalorian.mp4"></video>
+
+    <main>
+        <div>
+          <h2>Catálogo completo</h2>
+        </div>
     
+        <section class="gallery">
+          <div class="card">
+            <img src="./assets/images/covers/cover0.jpeg" alt="cover">
+          </div>
+    
+          <div class="card">
+            <img src="./assets/images/covers/cover1.jpeg" alt="cover">
+          </div>
+    
+          <div class="card">
+            <img src="./assets/images/covers/cover2.jpeg" alt="cover">
+          </div>
+    
+          <div class="card">
+            <img src="./assets/images/covers/cover3.jpeg" alt="cover">
+          </div>
+    
+          <div class="card">
+            <img src="./assets/images/covers/cover4.jpeg" alt="cover">
+          </div>
+    
+          <div class="card">
+            <img src="./assets/images/covers/cover5.jpeg" alt="cover">
+          </div>
+    
+          <div class="card">
+            <img src="./assets/images/covers/cover6.jpeg" alt="cover">
+          </div>
+    
+          <div class="card">
+            <img src="./assets/images/covers/cover7.jpeg" alt="cover">
+          </div>
+        </section>
+
+        <div>
+            <h2> Em Alta</h2>
+        </div>
+
+        <section class="gallery2">
+            <div class="card">
+              <img src="./assets/images/covers/cover10.jpeg" alt="cover">
+            </div>
+      
+            <div class="card">
+              <img src="./assets/images/covers/cover11.jpeg" alt="cover">
+            </div>
+      
+            <div class="card">
+              <img src="./assets/images/covers/cover2.jpeg" alt="cover">
+            </div>
+      
+            <div class="card">
+              <img src="./assets/images/covers/cover3.jpeg" alt="cover">
+            </div>
+      
+        </section>
+
+        <div>
+            <h2> Minha Lista</h2>
+        </div>
+
+        <section class="gallery2">
+            <div class="card">
+              <img src="./assets/images/covers/cover0.jpeg" alt="cover">
+            </div>
+      
+            <div class="card">
+              <img src="./assets/images/covers/cover1.jpeg" alt="cover">
+            </div>
+      
+            <div class="card">
+              <img src="./assets/images/covers/cover2.jpeg" alt="cover">
+            </div>
+      
+            <div class="card">
+              <img src="./assets/images/covers/cover3.jpeg" alt="cover">
+            </div>
+      
+        </section>
+
+        <div>
+            <h2> Favoritos</h2>
+        </div>
+
+        <section class="gallery2">
+            <div class="card">
+              <img src="./assets/images/covers/cover4.jpeg" alt="cover">
+            </div>
+      
+            <div class="card">
+              <img src="./assets/images/covers/cover5.jpeg" alt="cover">
+            </div>
+      
+            <div class="card">
+              <img src="./assets/images/covers/cover6.jpeg" alt="cover">
+            </div>
+      
+            <div class="card">
+              <img src="./assets/images/covers/cover7.jpeg" alt="cover">
+            </div>
+      
+        </section>
+      </main>
+    
+      <script src="./script.js"></script>
 </body>
 </html>
